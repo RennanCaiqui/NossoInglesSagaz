@@ -1,0 +1,175 @@
+/* General Styles */
+
+body {
+	margin: 0;
+	font-family: Rubik, sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F9F9F9;
+	padding: 20px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-left: 20px;
+	position: relative;
+}
+
+nav a {
+	text-decoration: none;
+	color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li:hover > ul {
+	display: block;
+}
+
+
+nav ul ul {
+	position: absolute;
+	display: none;
+	background-color: #F9F9F9;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+nav ul ul li {
+	display: block;
+	margin: 0;
+}
+
+nav ul ul a {
+	display: block;
+	padding: 10px;
+	color: #333;
+}
+
+main {
+	margin: 50px auto;
+	max-width: 1200px;
+	padding: 0 0;
+}
+
+h1 {
+	font-size: 36px;
+    font-weight: 700;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+footer {
+	background-color: #F9F9F9;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
+	font-size: 14px;
+	color: #666;
+}
+
+
+/* Logo */
+
+.logo {
+	width: 40px;
+	height: 40px;
+	background-color: #ada7b0;
+	border-radius: 20%;
+	background-image: url("C:\Users\Rennan\Desktop\Underrated English\images\icon\cup_of_tea.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+.headline-section {
+    margin-top: 50px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .headline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .headline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+  }
+  
+  .headline-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .headline-date {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  
+
+/* Mobile Styles */
+
+@media screen and (max-width: 720px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	nav ul {
+		flex-direction: column;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	nav li {
+		margin: 10px 0;
+	}
+	nav ul ul {
+		position: static;
+		background-color: transparent;
+		box-shadow: none;
+	}
+	.logo {
+		margin-bottom: 20px;
+	}
+	main {
+		margin: 20px;
+	}
+	h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 16px;
+	}
+}
